@@ -28,6 +28,8 @@ public class BoardingPass {
                 System.out.println("Input string does not have enough characters.");
             }
 
+            //flight No
+
             System.out.println("Flight No: " + modifiedArray[3]);
 
             char fourthChar = modifiedArray[4].charAt(4);
@@ -43,6 +45,8 @@ public class BoardingPass {
             }
 
             String seatNumber = seatNoFullString.substring(5, 8);
+
+            //seat no
             System.out.println("Seat No: " + seatNumber);
 
         } else {
