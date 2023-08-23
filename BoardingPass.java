@@ -1,6 +1,8 @@
 public class BoardingPass {
     public static void main(String[] args) {
-        String inputString = "M1SHEIKH/FAIZ QADI    EFBDMFD DELKHIPK 0273 171Y022A0084 100";
+        String input = "M1SHEIKH/FAIZ QADI  EFBDMFD DELKHIPK 0273 171Y022A0084 100";
+
+        String inputString = input.replace("\u00A0", " ");
 
         int firstSpaceIndex = inputString.indexOf("  ");
 
@@ -28,7 +30,7 @@ public class BoardingPass {
                 System.out.println("Input string does not have enough characters.");
             }
 
-            //flight No
+            // flight No
 
             System.out.println("Flight No: " + modifiedArray[3]);
 
@@ -46,7 +48,7 @@ public class BoardingPass {
 
             String seatNumber = seatNoFullString.substring(5, 8);
 
-            //seat no
+            // seat no
             System.out.println("Seat No: " + seatNumber);
 
         } else {
